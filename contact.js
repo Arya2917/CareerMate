@@ -1,5 +1,20 @@
-$('#send').click(function(){
-  $('div:nth-child(2)').addClass('sending');
-  var name = $('#name').val();
-  $('#envelope').append('<p class="callback">Thanks<br>' + name + '!</p>');
-})
+
+const inputs = document.querySelectorAll(".input");
+
+function focusFunc() {
+  let parent = this.parentNode;
+  parent.classList.add("focus");
+}
+
+function blurFunc() {
+  let parent = this.parentNode;
+  if (this.value == "") {
+    parent.classList.remove("focus");
+  }
+}
+
+inputs.forEach((input) => {
+  input.addEventListener("focus", focusFunc);
+  input.addEventListener("blur", blurFunc);
+});
+
