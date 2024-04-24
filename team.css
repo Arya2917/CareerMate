@@ -1,0 +1,275 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    /* background: linear-gradient(to bottom, #64e469, #1863b9); */
+    background-color: rgb(244, 252, 255);
+     color: rgb(1, 1, 58);
+     
+    min-height: 100vh;
+    /* height: 100%; */
+}
+nav{
+    background: rgb(8, 8, 68);
+    width: 100% !important;
+}
+header {
+    /* background: linear-gradient(to right, #48536e, #3a72cc); */
+    background: rgb(8, 8, 68);
+    padding: 20px 0;
+    position: relative;
+    z-index: 1;
+    width: 100%; /* Set width to 100% */
+    box-sizing: border-box;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logoname {
+    display: flex;
+    align-items: center;
+}
+
+#logoname img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#text {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-left: 10px;
+    font-family: 'Pacifico', cursive;
+}
+
+.mobile-menu-icon {
+    display: none;
+    cursor: pointer;
+    color: white;
+}
+
+.contain {
+    display: flex;
+    align-items: center;
+}
+
+h2{
+    font-family: 'Poppins', serif;
+}
+.home, .about, .contact, .login-btn {
+    border: none;
+    border-radius: 20px;
+    background-color: #FF4B2B;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    font-size: large;
+    color: #fff;
+}
+
+.home:hover, .about:hover, .contact:hover, .login-btn:hover, .flow:hover {
+    background-color: #FF6C57;
+    transform: translateY(-3px);
+}
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(44, 59, 99, 0.8);
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-menu button {
+    margin: 5px;
+}
+* {
+    font-family: Nunito, sans-serif;
+  }
+  
+  .text-blk {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    line-height: 25px;
+  }
+  
+  .responsive-cell-block {
+    min-height: 75px;
+  }
+  
+  .responsive-container-block {
+    min-height: 75px;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    justify-content: space-evenly;
+  }
+  
+  .outer-container {
+    padding-top: 10px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    background-color: rgb(244, 252, 255);
+    width: 100%; /* Set width to 100% */
+    box-sizing: border-box;
+  }
+  
+  .inner-container {
+    max-width: 1320px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-left: auto;
+    width: 100%; /* Set width to 100% */
+    box-sizing: border-box;
+  }
+  
+  .section-head-text {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 48px;
+    color: rgb(0, 135, 177);
+    margin: 0 0 10px 0;
+  }
+  
+  .section-subhead-text {
+    font-size: 25px;
+    color: rgb(153, 153, 153);
+    line-height: 35px;
+    max-width: 470px;
+    text-align: center;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 60px;
+    margin-left: 0px;
+  }
+  
+  .img-wrapper {
+    width: 100%;
+  }
+  
+  .team-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .social-media-links {
+    width: 125px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .name {
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(102, 102, 102);
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+  }
+  
+  .position {
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(0, 135, 177);
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 50px;
+    margin-left: 0px;
+  }
+  
+  .team-img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .team-card-container {
+    width: 280px;
+    margin: 0 0 40px 0;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    /* Tablet and smaller screens */
+    #text {
+        font-size: 2rem;
+    }
+    .contain {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-open {
+        display: flex;
+        animation: slideIn 0.5s ease;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* Mobile devices */
+    .menu {
+        padding: 10px;
+    }
+    #logoname img {
+        height: 50px;
+    }
+    .contain {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+    button {
+        margin: 5px;
+        font-size: 1rem;
+    }
+    #text {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    /* Big Screen Laptops */
+    #text {
+        font-size: 3rem;
+    }
+    .logoname {
+        font-size: 40px;
+    }
+    button {
+        padding: 12px 25px;
+        font-size: 1.1rem;
+    }
+}

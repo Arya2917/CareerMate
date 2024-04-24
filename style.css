@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    /* background: linear-gradient(to bottom, #64e469, #1863b9); */
+     background: white;
+     color: rgb(1, 1, 58);
+     
+    min-height: 100vh;
+    /* height: 100%; */
+}
+
+header {
+    /* background: linear-gradient(to right, #48536e, #3a72cc); */
+    background: rgb(8, 8, 68);
+    padding: 20px 0;
+    position: relative;
+    z-index: 1;
+    width: 100% !important;
+}
+
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logoname {
+    display: flex;
+    align-items: center;
+}
+
+#logoname img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#text {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-left: 10px;
+    font-family: 'Pacifico', cursive;
+}
+
+.mobile-menu-icon {
+    display: none;
+    cursor: pointer;
+    color: white;
+}
+
+.contain {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    border: none;
+    border-radius: 20px;
+    background-color: #FF4B2B;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    font-size: large;
+    color: white;
+}
+
+button:hover {
+    background-color: #FF6C57;
+    transform: translateY(-3px);
+}
+
+.content {
+    padding: 40px;
+    text-align: center;
+}
+
+#one {
+    color: rgb(1, 1, 58);
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3.2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: 2px;
+}
+
+#two {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 40px;
+    color: rgb(1, 1, 58);
+}
+
+.start {
+    text-align: center;
+}
+
+.strt a {
+    color: white;
+    text-decoration: none;
+}
+
+.strt button {
+    background-color: #FF4B2B;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.strt button:hover {
+    background-color: #FF6C57;
+    transform: translateY(-3px);
+}
+
+/* Mobile menu styles */
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(44, 59, 99, 0.8);
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-menu button {
+    margin: 5px;
+}
+
+/* Media queries */
+@media only screen and (max-width: 768px) {
+    /* Tablet and smaller screens */
+    .logoname {
+        flex-grow: 1;
+    }
+    .contain {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-open {
+        display: flex;
+        animation: slideIn 0.5s ease;
+    }
+    #two {
+        font-size: 14px;
+    }
+    #one {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* Mobile devices */
+    .menu {
+        padding: 10px;
+    }
+
+    #logoname img {
+        height: 50px;
+    }
+
+    .contain {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    button {
+        margin: 5px;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    #text {
+        font-size: 28px;
+    }
+
+    #two {
+        font-size: 12px;
+    }
+
+    #one {
+        font-size: 24px;
+    }
+
+    .start {
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    /* Big Screen Laptops */
+    .logoname {
+        font-size: 40px;
+    }
+    .contain {
+        margin-right: 20px;
+    }
+    button {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+    .content {
+        padding: 40px;
+    }
+    #two {
+        font-size: 24px;
+    }
+    .start {
+        margin-bottom: 100px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    /* Medium Screen Laptops */
+    #two {
+        font-size: 18px;
+    }
+    #one {
+        font-size: 2.5rem;
+    }
+}

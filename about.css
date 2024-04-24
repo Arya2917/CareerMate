@@ -1,0 +1,432 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    /* background: linear-gradient(to bottom, #64e469, #1863b9); */
+     background: white;
+     color: rgb(1, 1, 58);
+     
+    min-height: 100vh;
+    /* height: 100%; */
+}
+
+header {
+    /* background: linear-gradient(to right, #48536e, #3a72cc); */
+    background: rgb(8, 8, 68);
+    padding: 20px 0;
+    position: relative;
+    z-index: 1;
+    width: 100% !important;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    
+}
+
+.logoname {
+    display: flex;
+    align-items: center;
+}
+
+#logoname img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#text {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-left: 10px;
+    font-family: 'Pacifico', cursive;
+}
+
+.mobile-menu-icon {
+    display: none;
+    cursor: pointer;
+    color: white;
+}
+
+.contain {
+    display: flex;
+    align-items: center;
+}
+
+h2{
+    font-family: 'Poppins', serif;
+}
+.home, .about, .contact, .login-btn {
+    border: none;
+    border-radius: 20px;
+    background-color: #FF4B2B;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    font-size: large;
+    color: #fff;
+}
+
+.home:hover, .about:hover, .contact:hover, .login-btn:hover, .flow:hover {
+    background-color: #FF6C57;
+    transform: translateY(-3px);
+}
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(44, 59, 99, 0.8);
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-menu button {
+    margin: 5px;
+}
+
+* {
+    font-family: Nunito, sans-serif;
+  }
+  
+  .text-blk {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    line-height: 25px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+  }
+  
+  .responsive-cell-block {
+    min-height: 75px;
+  }
+  
+  .responsive-container-block {
+    min-height: 75px;
+    height: fit-content;
+    width: 100%;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    justify-content: flex-start;
+  }
+  
+  .responsive-container-block.bigContainer {
+    padding-top: 0px;
+    padding-right: 50px;
+    padding-bottom: 0px;
+    padding-left: 50px;
+    margin-top: 50px;
+    margin-right: 0px;
+    margin-bottom: 50px;
+    margin-left: 0px;
+  }
+  
+  .responsive-container-block.Container {
+    max-width: 1320px;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+  }
+  
+  .mainImg {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+  }
+  
+  .blueDots {
+    position: absolute;
+    top: 150px;
+    right: 15%;
+    z-index: -1;
+    left: auto;
+    width: 80%;
+    height: 500px;
+    object-fit: cover;
+  }
+  
+  .imgContainer {
+    position: relative;
+    width: 48%;
+  }
+  
+  .responsive-container-block.textSide {
+    width: 48%;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    z-index: 100;
+  }
+  
+  .text-blk.heading {
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 700;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+  }
+  
+  .text-blk.subHeading {
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+  }
+  
+  .cardImg {
+    width: 31px;
+    height: 31px;
+  }
+  
+  .cardImgContainer {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-color: rgb(229, 229, 229);
+    border-right-color: rgb(229, 229, 229);
+    border-bottom-color: rgb(229, 229, 229);
+    border-left-color: rgb(229, 229, 229);
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-top: 0px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
+  
+  .responsive-cell-block.wk-desk-6.wk-ipadp-6.wk-tab-12.wk-mobile-12 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+  }
+  
+  .text-blk.cardHeading {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+  }
+  
+  .text-blk.cardSubHeading {
+    color: rgb(153, 153, 153);
+    line-height: 22px;
+  }
+  
+  .explore {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    color: white;
+    background-color: #FF4B2B;
+    box-shadow: rgba(244, 152, 146, 0.25) 0px 10px 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    cursor: pointer;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-top-style: initial;
+    border-right-style: initial;
+    border-bottom-style: initial;
+    border-left-style: initial;
+    border-top-color: initial;
+    border-right-color: initial;
+    border-bottom-color: initial;
+    border-left-color: initial;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    padding-top: 17px;
+    padding-right: 40px;
+    padding-bottom: 17px;
+    padding-left: 40px;
+  }
+  
+  .explore:hover {
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(244, 182, 176);
+  }
+  
+  #ixvck {
+    margin-top: 60px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
+  
+  .redDots {
+    position: absolute;
+    bottom: -350px;
+    right: -100px;
+    height: 500px;
+    width: 400px;
+    object-fit: cover;
+    top: auto;
+  }
+ 
+  @media only screen and (max-width: 768px) {
+    /* Tablet and smaller screens */
+    #text {
+        font-size: 2rem;
+    }
+    .contain {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-open {
+        display: flex;
+        animation: slideIn 0.5s ease;
+    }
+    .mainImg {
+        height: auto;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* Mobile devices */
+    .menu {
+        padding: 10px;
+    }
+    #logoname img {
+        height: 50px;
+    }
+    .contain {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+    button {
+        margin: 5px;
+        font-size: 1rem;
+    }
+    #text {
+        font-size: 1.5rem;
+    }
+    .text-blk.heading {
+        font-size: 28px;
+        line-height: 32px;
+    }
+    .text-blk.subHeading {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .cardImg {
+        width: 25px;
+        height: 25px;
+    }
+    .explore {
+        font-size: 16px;
+        line-height: 18px;
+        padding: 12px 25px;
+    }
+    .redDots {
+        bottom: -250px;
+        right: -50px;
+        height: 400px;
+        width: 300px;
+    }
+    .responsive-container-block.textSide {
+        width: 100%;
+        padding: 0;
+    }
+    .imgContainer {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .mainImg {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    /* Big Screen Laptops */
+    #text {
+        font-size: 3rem;
+    }
+    .logoname {
+        font-size: 40px;
+    }
+    button {
+        padding: 12px 25px;
+        font-size: 1.1rem;
+    }
+}

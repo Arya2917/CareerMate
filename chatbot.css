@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    /* background: linear-gradient(to bottom, #64e469, #1863b9); */
+     background: white;
+    color: #fff;
+    min-height: 100vh;
+    /* height: 100%; */
+}
+
+header {
+    /* background: linear-gradient(to right, #48536e, #3a72cc); */
+    background: rgb(8, 8, 68);
+    padding: 20px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logoname {
+    display: flex;
+    align-items: center;
+}
+
+#logoname img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#text {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-left: 10px;
+    font-family: 'Pacifico', cursive;
+}
+
+.mobile-menu-icon {
+    display: none;
+    cursor: pointer;
+    color: white;
+}
+
+.contain {
+    display: flex;
+    align-items: center;
+}
+
+h2{
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 2px;
+}
+.home, .about, .contact, #logoutButton{
+    border: none;
+    border-radius: 20px;
+    background-color: #FF4B2B;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+a, #logoutButton {
+    text-decoration: none;
+    font-size: large;
+    color: #fff;
+}
+
+.home:hover, .about:hover, .contact:hover, #logoutButton:hover, .flow:hover {
+    background-color: #FF6C57;
+    transform: translateY(-3px);
+}
+
+.content{
+    margin: 30px 0px 30px 40px;
+    font-size: 1.5rem;
+    padding: 2px;
+    line-height: 1.5;
+    color: rgb(1, 1, 58);
+   
+}
+
+.flow  {
+    background-color: #FF4B2B;
+   
+    border: none;
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 40px;
+}
+
+.content p{
+    font-family: 'Poppins', serif;
+}
+
+.flowchart p{
+    font-size: 1.2rem;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    color: rgb(1, 1, 58);
+    font-weight: bold;
+}
+.bot{
+    position: fixed;
+    right: 0;
+}
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(44, 59, 99, 0.8);
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-menu button {
+    margin: 5px;
+}
+
+/* Media queries */
+@media only screen and (max-width: 768px) {
+    /* Tablet and smaller screens */
+    .logoname {
+        flex-grow: 1;
+    }
+    .contain {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-open {
+        display: flex;
+        animation: slideIn 0.5s ease;
+    }
+    #text {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* Mobile devices */
+    .menu {
+        padding: 10px;
+    }
+    #logoname img {
+        height: 50px;
+    }
+    .contain {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+    button {
+        margin: 5px;
+    }
+    #text {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+    .flow-p{
+        font-size: 11px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    /* Big Screen Laptops */
+    .logoname {
+        font-size: 40px;
+    }
+    .contain {
+        margin-right: 20px;
+    }
+    button {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    /* Medium Screen Laptops */
+
+}
